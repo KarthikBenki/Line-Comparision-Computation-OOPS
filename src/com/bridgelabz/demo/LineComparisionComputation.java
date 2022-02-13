@@ -34,6 +34,18 @@ public class LineComparisionComputation {
 	}
     }
 
+    static void compareTo() {
+	double lineLength1 = lineLength();
+	double lineLength2 = lineLength();
+	if (lineLength1 == lineLength2) {
+	    System.out.println("lineLength1 is equal to lineLength2");
+	} else if (lineLength1 > lineLength2) {
+	    System.out.println("lineLength1 is greater than lineLength2");
+	} else {
+	    System.out.println("lineLength2 is greater than lineLength1");
+	}
+    }
+
     public static double lineLength() {
 	Point point = new Point();
 	Scanner scanner = new Scanner(System.in);
@@ -52,6 +64,7 @@ public class LineComparisionComputation {
 	double x = Math.pow((x1 - x2), 2);
 	double y = Math.pow((y1 - y2), 2);
 	double length = Math.sqrt(x + y);
+	scanner.close();
 
 	return length;
 
@@ -59,7 +72,7 @@ public class LineComparisionComputation {
 
     public static void main(String[] args) {
 	System.out.println("Welcome to Line Comparison Computation Program using OOPS");
-	equalityCheck();
+	compareTo();
 
     }
 
