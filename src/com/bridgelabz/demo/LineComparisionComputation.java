@@ -52,15 +52,19 @@ public class LineComparisionComputation {
 	System.out.println("enter the value of x1");
 	point.setX((scanner.nextInt()));
 	double x1 = point.getX();
+
 	System.out.println("enter the value of x2");
 	point.setX((scanner.nextInt()));
 	double x2 = point.getX();
+
 	System.out.println("enter the value of y1");
 	point.setY((scanner.nextInt()));
 	double y1 = point.getY();
+
 	System.out.println("enter the value of y2");
 	point.setY((scanner.nextInt()));
 	double y2 = point.getY();
+
 	double x = Math.pow((x1 - x2), 2);
 	double y = Math.pow((y1 - y2), 2);
 	double length = Math.sqrt(x + y);
